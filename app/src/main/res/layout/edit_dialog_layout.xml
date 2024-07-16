@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/startTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Start Time"
+            android:inputType="time"/>
+
+        <EditText
+            android:id="@+id/endTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="End Time"
+            android:inputType="time"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/workEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Name" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1003268042041",
+    "firebase_url": "https://toofani-scheduler-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "toofani-scheduler",
+    "storage_bucket": "toofani-scheduler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003268042041:android:f6b0bfef40beb3c2200ce8",
+        "android_client_info": {
+          "package_name": "com.example.toofanischeduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003268042041-dqoqqk4bhegq5sbvhe4maa6d8m8luas2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toofanischeduler",
+            "certificate_hash": "1253acbf1def5f7604dff73eeeb609e0384c7c0a"
+          }
+        },
+        {
+          "client_id": "1003268042041-o14st5eeom4ue58k3uksdsuuk4l3so05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxgyisJEFXiifMlnRZyIAUMT3_Q3yuR8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003268042041-o14st5eeom4ue58k3uksdsuuk4l3so05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

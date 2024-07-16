@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogoActivity"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/sc" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/logo"
+        android:text="Welcome to Toofani Scheduler"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App designed by Roach\nOnly for testing purposes."
+        android:layout_below="@+id/textView3"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>

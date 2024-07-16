@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.toofanischeduler.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_home_page" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_myschedule"
+        android:name="com.example.toofanischeduler.ui.myschedule.MyscheduleFragment"
+        android:label="My Schedule"
+        tools:layout="@layout/fragment_myschedule"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_editschedule"
+        android:name="com.example.toofanischeduler.ui.editschedule.EditscheduleFragment"
+        android:label="Edit Schedule"
+        tools:layout="@layout/fragment_editschedule" />
+</navigation>

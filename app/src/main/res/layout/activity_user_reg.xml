@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#C5CAE9"
+    android:layout_height="match_parent"
+    tools:context=".UserReg">
+
+    <TextView
+        android:id="@+id/reghead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/reghead">
+
+        <EditText
+            android:id="@+id/regname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:inputType="text"
+            android:hint="Name"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/regmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:inputType="text"
+            android:hint="Email"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/cardview_shadow_start_color"/>
+
+        <EditText
+            android:id="@+id/regpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/cardview_shadow_start_color"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/submit"
+            android:text="Submit"
+            android:textSize="25dp"
+            android:padding="20dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

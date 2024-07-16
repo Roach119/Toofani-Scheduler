@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#C5CAE9"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User"
+        android:inputType="text"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:text="LOGIN"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New User? Register here."
+        android:textSize="18dp"
+        android:textColor="#0000FF"/>
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textSize="18dp"
+        android:textColor="#0000FF"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

@@ -30,7 +30,7 @@ public class RecoveryActivity extends AppCompatActivity {
         recover = findViewById(R.id.recover);
         recmail = findViewById(R.id.recmail);
         notfound = findViewById(R.id.notfound);
-        showpass = findViewById(R.id.showpass);
+
 
         recover.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,10 +52,8 @@ public class RecoveryActivity extends AppCompatActivity {
                             public void onComplete(Task<Void> task) {
                                 if (task.isSuccessful()) {
                                     notfound.setText("Password reset email sent.");
-                                    showpass.setText("");
                                 } else {
                                     notfound.setText("Email not found or error occurred.");
-                                    showpass.setText("");
                                 }
                             }
                         });

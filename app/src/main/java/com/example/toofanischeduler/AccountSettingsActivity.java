@@ -289,7 +289,8 @@ public class AccountSettingsActivity extends AppCompatActivity {
                                                             .addOnCompleteListener(authTask -> {
                                                                 if (authTask.isSuccessful()) {
                                                                     Toast.makeText(AccountSettingsActivity.this, "Account deleted successfully", Toast.LENGTH_SHORT).show();
-                                                                    navigateToLoginPage(); // Move to login page after deletion
+                                                                    navigateToLoginPage();
+                                                                    // Move to login page after deletion
                                                                 } else {
                                                                     Toast.makeText(AccountSettingsActivity.this, "Failed to delete account from Firebase Authentication: " + authTask.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                                                 }
@@ -313,12 +314,14 @@ public class AccountSettingsActivity extends AppCompatActivity {
 
     private void navigateToTestActivity() {
         Intent intent = new Intent(AccountSettingsActivity.this, test.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
     }
 
     private void navigateToLoginPage() {
         Intent intent = new Intent(AccountSettingsActivity.this, LoginPage.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
     }

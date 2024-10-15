@@ -316,14 +316,14 @@ public class AccountSettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(AccountSettingsActivity.this, test.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-        finish();
+
     }
 
     private void navigateToLoginPage() {
         Intent intent = new Intent(AccountSettingsActivity.this, LoginPage.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-        finish();
+
     }
 
     private interface ReauthenticationCallback {
